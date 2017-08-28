@@ -1,0 +1,261 @@
+.wrapper{
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  max-width: 1024px;
+}
+
+/********* Header **********/
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  order: 1;
+  border-bottom: 5px solid #7d97ad;
+  margin-right: 5px;
+}
+.logo-wrapper{
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-logo{
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+}
+
+
+.header-right{
+  display: flex;
+  flex-flow: column;
+  text-align: right;
+  padding: 0 10px 0 10px;
+  margin-left: auto;
+}
+
+.header-title{
+  order: 3;
+  flex: 1;
+  font-family:verdana, arial, serif;
+  font-weight: lighter;
+  font-size:2em;
+  color:#2d3c49
+
+}
+
+.header-slogan{
+  margin: 0;
+  order: 4;
+  flex: 1;
+  font-family:arial, serif;
+  font-weight: lighter;
+  font-size:1.5em;
+  color:#2d3c49
+
+}
+
+/********* Main **********/
+.main{
+display: flex;
+flex-flow: row;
+order: 2;
+}
+
+/********* Main > Left **********/
+.left{
+display: flex;
+flex-flow: column;
+flex: 1;
+background-color: lightblue;
+order: 3;
+margin-top: 5px ;
+}
+
+
+.left-column-item{
+  display: flex;
+}
+
+.left-column-item > img{
+  flex:1;
+  height: 20px;
+  width: 20px;
+  margin: 20px 0 0 0px;
+
+}
+
+.left-column-item > p{
+  flex:3;
+  border-bottom: solid 1px #7d97ad;
+  margin: 5px 8px 5px 5px;
+  padding: 10px 0 10px 0;
+}
+
+/********* Main > Right **********/
+.right{
+display: flex;
+flex-flow: column;
+flex: 4;
+order:4;
+}
+.main-img-wrapper{
+  order:4;
+  margin:5px 5px 0 5px;
+}
+
+.main-img{
+  width: 100%;
+}
+
+/** Main > Right > Project Spot Light **/
+.projects{
+display: flex;
+flex-flow: row;
+order: 6;
+
+}
+
+.projects-title{
+  display: flex;
+  flex-flow: column;
+  height: 50px;
+  order: 5;
+  margin: 0 5px 0 5px;
+  border-bottom: solid 1px #aaa;
+  padding-bottom: 2px;
+}
+
+.projects-title > h2{
+  padding-bottom: 12px;
+  font-family:arial,serif;
+  font-size:1.5em;
+  color:#2d3c49
+}
+
+.project{
+  display: flex;
+  flex-flow: column wrap;
+  flex:1;
+  overflow: hidden;
+  margin: 5px;
+  border: 1px solid #7d97ad
+
+
+}
+
+.github-link-wrapper{
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+.github-link-wrapper >p{
+  font-size: 0.8em;
+  font-family: helvetica, courier, times-new-roman;
+}
+
+.github-link-wrapper >p > a{
+  font-size: 1.1em;
+  font-weight: normal;
+  font-family: helvetica, times-new-roman, courier;
+  color: seagreen;
+
+}
+.github-link-wrapper >p > a:hover{
+  color: hotpink;
+}
+
+.project-title{
+
+margin: 15px 0 0 5px;
+}
+.project-content{
+
+margin: 3px 5px 0 5px;
+
+}
+
+.project-img{
+  width: 100%;
+}
+.project1{
+}
+.project2{
+
+}
+
+.project3{
+
+}
+/** Main > Right > About Me **/
+
+.about-me{
+border: solid 1px #aaa;
+margin: 10px 5px 0 5px;
+display: flex;
+order: 7;
+flex-flow: column wrap;
+align-items: center;
+overflow: hidden;
+}
+
+.aboutme-article-title{
+  margin: 10px 5px 5px 5px;
+  align-self: center;
+}
+
+.aboutme-article-content{
+  margin: 6px 5px 18px 5px;
+  align-self: center;
+}
+
+.aboutme-img{
+  width:100%;
+}
+/** Footer **/
+.footer{
+  display: flex;
+  background-color: deepskyblue;
+  height: 60px;
+  order: 8;
+  margin-top: 5px;
+  justify-content: center;
+  align-items:center;
+}
+@media(min-width: 481px) and (max-width: 880px){
+.left{
+  display: none;
+}
+.project3{
+  display: none;
+}
+}
+
+@media(max-width:480px){
+.left{
+  display: none;
+}
+.projects{
+  flex-flow: column;
+}
+}
+
+@media(max-width:400px){
+.left{
+  display: none;
+}
+.projects{
+  flex-flow: column;
+}
+.header-title{
+  font-size:1.2em;
+  margin-bottom: 0;
+}
+
+.header-slogan{
+  font-size:1em;
+  margin-top: 0;
+}
+}

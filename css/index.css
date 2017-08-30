@@ -14,6 +14,7 @@
   border-bottom: 5px solid #7d97ad;
   margin-right: 5px;
 }
+
 .logo-wrapper {
   display: flex;
   margin-right: auto;
@@ -26,12 +27,11 @@
   padding: 10px;
 }
 
-
 .header-right {
   display: flex;
   flex-flow: column;
   text-align: right;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
   margin-left: auto;
 }
 
@@ -40,20 +40,18 @@
   flex: 1;
   font-family:verdana, arial, serif;
   font-weight: lighter;
-  font-size:2em;
-  color:#2d3c49
-
+  font-size: 2em;
+  color: #2d3c49
 }
 
 .header-slogan {
   margin: 0;
   order: 4;
   flex: 1;
-  font-family:arial, serif;
+  font-family: arial, serif;
   font-weight: lighter;
-  font-size:1.5em;
-  color:#2d3c49
-
+  font-size: 1.5em;
+  color: #2d3c49
 }
 
 /********* Main **********/
@@ -73,7 +71,6 @@ order: 3;
 margin-top: 5px ;
 }
 
-
 .left-column-item {
   display: flex;
 }
@@ -83,11 +80,10 @@ margin-top: 5px ;
   height: 20px;
   width: 20px;
   margin: 20px 0 0 0px;
-
 }
 
 .left-column-item > p {
-  flex:3;
+  flex: 3;
   border-bottom: solid 1px #7d97ad;
   margin: 5px 8px 5px 5px;
   padding: 10px 0 10px 0;
@@ -98,11 +94,12 @@ margin-top: 5px ;
 display: flex;
 flex-flow: column;
 flex: 4;
-order:4;
+order: 4;
 }
+
 .main-img-wrapper {
-  order:4;
-  margin:5px 5px 0 5px;
+  order: 4;
+  margin: 5px 5px 0 5px;
 }
 
 .main-img {
@@ -114,7 +111,6 @@ order:4;
 display: flex;
 flex-flow: row;
 order: 6;
-
 }
 
 .projects-title {
@@ -129,20 +125,18 @@ order: 6;
 
 .projects-title > h2 {
   padding-bottom: 12px;
-  font-family:arial,serif;
-  font-size:1.5em;
-  color:#2d3c49
+  font-family: arial,serif;
+  font-size: 1.5em;
+  color: #2d3c49
 }
 
 .project {
   display: flex;
   flex-flow: column wrap;
-  flex:1;
+  flex: 1;
   overflow: hidden;
   margin: 5px;
   border: 1px solid #7d97ad
-
-
 }
 
 .github-link-wrapper {
@@ -162,20 +156,18 @@ order: 6;
   font-family: helvetica, times-new-roman, courier;
   color: deepskyblue;
   text-decoration: none;
-
 }
+
 .github-link-wrapper >p > a:hover {
   color: hotpink;
 }
 
 .project-title {
-
 margin: 15px 0 0 5px;
 }
+
 .project-content {
-
 margin: 3px 5px 0 5px;
-
 }
 
 .project-img {
@@ -183,15 +175,14 @@ margin: 3px 5px 0 5px;
 }
 
 /** Main > Right > About Me **/
-
 .about-me {
-border: solid 1px #aaa;
-margin: 10px 5px 0 5px;
-display: flex;
-order: 7;
-flex-flow: column wrap;
-align-items: center;
-overflow: hidden;
+  border: solid 1px #aaa;
+  margin: 10px 5px 0 5px;
+  display: flex;
+  order: 7;
+  flex-flow: column wrap;
+  align-items: center;
+  overflow: hidden;
 }
 
 .aboutme-article-title {
@@ -207,6 +198,7 @@ overflow: hidden;
 .aboutme-img {
   width:100%;
 }
+
 /** Footer **/
 .footer {
   display: flex;
@@ -215,7 +207,7 @@ overflow: hidden;
   order: 8;
   margin-top: 5px;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .footer-item {
@@ -245,7 +237,7 @@ overflow: hidden;
 .left-column {
   display: flex;
   flex-flow: row wrap;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .left-column-item {
@@ -253,7 +245,7 @@ width: 45%;
 }
 }
 
-@media(max-width:480px) {
+@media(max-width: 480px) {
   .main{
     flex-flow: column;
   }
@@ -266,7 +258,7 @@ width: 45%;
 }
 }
 
-@media(max-width:400px) {
+@media(max-width: 400px) {
   .main{
     flex-flow: column;
   }
@@ -274,16 +266,18 @@ width: 45%;
   .left {
     order: 10;
   }
+
 .projects {
   flex-flow: column;
 }
+
 .header-title {
-  font-size:1.2em;
+  font-size: 1.2em;
   margin-bottom: 0;
 }
 
 .header-slogan {
-  font-size:1em;
+  font-size: 1em;
   margin-top: 0;
 }
 }

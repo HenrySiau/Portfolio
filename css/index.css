@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
   display: flex;
   flex-flow: column wrap;
   margin: auto;
@@ -6,7 +6,7 @@
 }
 
 /********* Header **********/
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   height: 120px;
@@ -14,20 +14,20 @@
   border-bottom: 5px solid #7d97ad;
   margin-right: 5px;
 }
-.logo-wrapper{
+.logo-wrapper {
   display: flex;
   margin-right: auto;
   align-items: center;
 }
 
-.header-logo{
+.header-logo {
   height: 80px;
   width: 80px;
   padding: 10px;
 }
 
 
-.header-right{
+.header-right {
   display: flex;
   flex-flow: column;
   text-align: right;
@@ -35,7 +35,7 @@
   margin-left: auto;
 }
 
-.header-title{
+.header-title {
   order: 3;
   flex: 1;
   font-family:verdana, arial, serif;
@@ -45,7 +45,7 @@
 
 }
 
-.header-slogan{
+.header-slogan {
   margin: 0;
   order: 4;
   flex: 1;
@@ -64,7 +64,7 @@ order: 2;
 }
 
 /********* Main > Left **********/
-.left{
+.left {
 display: flex;
 flex-flow: column;
 flex: 1;
@@ -74,11 +74,11 @@ margin-top: 5px ;
 }
 
 
-.left-column-item{
+.left-column-item {
   display: flex;
 }
 
-.left-column-item > img{
+.left-column-item > img {
   flex:1;
   height: 20px;
   width: 20px;
@@ -86,7 +86,7 @@ margin-top: 5px ;
 
 }
 
-.left-column-item > p{
+.left-column-item > p {
   flex:3;
   border-bottom: solid 1px #7d97ad;
   margin: 5px 8px 5px 5px;
@@ -94,30 +94,30 @@ margin-top: 5px ;
 }
 
 /********* Main > Right **********/
-.right{
+.right {
 display: flex;
 flex-flow: column;
 flex: 4;
 order:4;
 }
-.main-img-wrapper{
+.main-img-wrapper {
   order:4;
   margin:5px 5px 0 5px;
 }
 
-.main-img{
+.main-img {
   width: 100%;
 }
 
 /** Main > Right > Project Spot Light **/
-.projects{
+.projects {
 display: flex;
 flex-flow: row;
 order: 6;
 
 }
 
-.projects-title{
+.projects-title {
   display: flex;
   flex-flow: column;
   height: 50px;
@@ -127,14 +127,14 @@ order: 6;
   padding-bottom: 2px;
 }
 
-.projects-title > h2{
+.projects-title > h2 {
   padding-bottom: 12px;
   font-family:arial,serif;
   font-size:1.5em;
   color:#2d3c49
 }
 
-.project{
+.project {
   display: flex;
   flex-flow: column wrap;
   flex:1;
@@ -145,53 +145,46 @@ order: 6;
 
 }
 
-.github-link-wrapper{
+.github-link-wrapper {
   align-self: flex-end;
   margin-left: auto;
   margin-right: 5px;
 }
 
-.github-link-wrapper >p{
+.github-link-wrapper >p {
   font-size: 0.8em;
   font-family: helvetica, courier, times-new-roman;
 }
 
-.github-link-wrapper >p > a{
+.github-link-wrapper >p > a {
   font-size: 1.1em;
   font-weight: normal;
   font-family: helvetica, times-new-roman, courier;
-  color: seagreen;
+  color: deepskyblue;
+  text-decoration: none;
 
 }
-.github-link-wrapper >p > a:hover{
+.github-link-wrapper >p > a:hover {
   color: hotpink;
 }
 
-.project-title{
+.project-title {
 
 margin: 15px 0 0 5px;
 }
-.project-content{
+.project-content {
 
 margin: 3px 5px 0 5px;
 
 }
 
-.project-img{
+.project-img {
   width: 100%;
 }
-.project1{
-}
-.project2{
 
-}
-
-.project3{
-
-}
 /** Main > Right > About Me **/
 
-.about-me{
+.about-me {
 border: solid 1px #aaa;
 margin: 10px 5px 0 5px;
 display: flex;
@@ -201,21 +194,21 @@ align-items: center;
 overflow: hidden;
 }
 
-.aboutme-article-title{
+.aboutme-article-title {
   margin: 10px 5px 5px 5px;
   align-self: center;
 }
 
-.aboutme-article-content{
+.aboutme-article-content {
   margin: 6px 5px 18px 5px;
   align-self: center;
 }
 
-.aboutme-img{
+.aboutme-img {
   width:100%;
 }
 /** Footer **/
-.footer{
+.footer {
   display: flex;
   background-color: deepskyblue;
   height: 60px;
@@ -224,37 +217,72 @@ overflow: hidden;
   justify-content: center;
   align-items:center;
 }
-@media(min-width: 481px) and (max-width: 880px){
-.left{
-  display: none;
+
+.footer-item {
+  margin: 0 5px 0 5px;
+  color: white;
 }
-.project3{
-  display: none;
+
+.footer > a:hover {
+  color: hotpink;
+
+}
+
+.footer > a:link {
+  text-decoration: none;
+}
+
+@media(min-width: 481px) and (max-width: 880px) {
+.main {
+  flex-flow: column;
+}
+
+.left {
+  order: 10;
+  margin: 10px 5px 5px 5px;
+}
+
+.left-column {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+}
+
+.left-column-item {
+width: 45%;
 }
 }
 
-@media(max-width:480px){
-.left{
-  display: none;
-}
-.projects{
+@media(max-width:480px) {
+  .main{
+    flex-flow: column;
+  }
+
+  .left {
+    order: 10;
+  }
+.projects {
   flex-flow: column;
 }
 }
 
-@media(max-width:400px){
-.left{
-  display: none;
-}
-.projects{
+@media(max-width:400px) {
+  .main{
+    flex-flow: column;
+  }
+
+  .left {
+    order: 10;
+  }
+.projects {
   flex-flow: column;
 }
-.header-title{
+.header-title {
   font-size:1.2em;
   margin-bottom: 0;
 }
 
-.header-slogan{
+.header-slogan {
   font-size:1em;
   margin-top: 0;
 }
